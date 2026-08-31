@@ -1,7 +1,5 @@
 <div align="center">
-
-# J | E
-
+  
 ## JOHN EDWARD
 
 ## SALAZAR RODRÍGUEZ
@@ -159,28 +157,13 @@ Sitio web personal desarrollado para presentar:
 
 </div>
 
-## 🚗 Didi
-
-### Conductor de aplicaciones
-
-**31 MARZO 2026 — ACTUALIDAD**
-
-📍 Bogotá D.C.
-
-Servicio de transporte mediante plataforma digital.
-
-### Funciones principales
-
-* Atención al cliente
-* Gestión eficiente de rutas y tiempos
-
 ---
 
 ## 🌐 Tabasco OC, LLC · Contratista de Claro
 
 ### Técnico integral de servicios
 
-**09 ENERO 2026 — 30 MARZO 2026**
+**09 ENERO 2026 — 15 AGOSTO 2026**
 
 ### Funciones principales
 
