@@ -1,445 +1,786 @@
-:root {
-    --ink: #18232e;
-    --muted: #65717c;
-    --accent: #0c9b9b;
-    --wash: #eff6f5;
-    --line: #dbe5e3
+/* =========================================================
+   CV — base stylesheet
+   The carousel rules are appended below.
+   ========================================================= */
+
+:root { 
+    --ink: #18232e; 
+    --muted: #65717c; 
+    --accent: #0c9b9b; 
+    --wash: #eff6f5; 
+    --line: #dbe5e3;
 }
 
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    background: #e5e9e9;
-    color: var(--ink);
-    font-family: "DM Sans", Arial, sans-serif;
-    line-height: 1.55
+  margin: 0;
+  background: #eef2f7;
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.55;
 }
 
 .cv {
-    max-width: 1120px;
-    margin: 40px auto;
-    background: #fff;
-    box-shadow: 0 20px 60px #24323824
+  width: min(1120px, calc(100% - 32px));
+  margin: 32px auto;
+  background: white;
+  box-shadow: 0 20px 55px rgba(15, 23, 42, .10);
 }
 
 .hero {
-    min-height: 220px;
-    padding: 47px 64px 40px;
-    display: grid;
-    grid-template-columns: 116px 1fr auto;
-    align-items: center;
-    gap: 28px;
-    color: #fff;
-    background: linear-gradient(120deg, #162d3a, #174e58)
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem 2.25rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .monogram {
-    align-self: stretch;
-    display: grid;
-    place-content: center;
-    border: 1px solid #79c4c1;
-    font: 700 24px/1 Montserrat, sans-serif;
-    letter-spacing: .13em;
-    color: #d3f4f0
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--ink);
+  color: white;
+  font: 800 1.5rem "Montserrat", sans-serif;
 }
 
-.monogram span {
-    color: #56bdb7
+.hero h1,
+.section h2,
+.sidebar h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin-top: 0
-}
-
-h1,
-h2,
-h3,
-.role {
-    font-family: Montserrat, sans-serif;
-    text-transform: uppercase
-}
-
-h1 {
-    font-size: 32px;
-    line-height: 1.16;
-    letter-spacing: .035em;
-    margin-bottom: 9px
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.05;
 }
 
 .role {
-    margin: 0;
-    color: #9be0da;
-    font-size: 12px;
-    letter-spacing: .13em;
-    font-weight: 700
+  margin: .45rem 0 0;
+  color: var(--muted);
 }
 
 address {
-    display: grid;
-    gap: 4px;
-    text-align: right;
-    font-size: 13px;
-    font-style: normal;
-    color: #dcebea
-}
-
-address a,
-.reference a {
-    color: inherit;
-    text-decoration: none
-}
-
-.layout {
-    display: grid;
-    grid-template-columns: 284px 1fr
-}
-
-.sidebar {
-    padding: 43px 34px;
-    background: var(--wash)
-}
-
-.sidebar section+section {
-    border-top: 1px solid #cbdedb;
-    margin-top: 31px;
-    padding-top: 29px
-}
-
-h2 {
-    margin-bottom: 18px;
-    font-size: 13px;
-    letter-spacing: .16em;
-    color: #087c80
-}
-
-.data {
-    margin: 0
-}
-
-.data div {
-    margin-bottom: 12px
-}
-
-.data dt {
-    font: 700 10px Montserrat, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    color: #587075
-}
-
-.data dd {
-    margin: 2px 0 0;
-    font-size: 13px
-}
-
-.pills {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none
-}
-
-.pills li {
-    padding: 5px 9px;
-    border: 1px solid #bcd8d5;
-    border-radius: 99px;
-    font-size: 12px;
-    color: #31535a
-}
-
-.reference {
-    display: grid;
-    gap: 2px;
-    margin-bottom: 16px;
-    font-size: 12px;
-    color: var(--muted)
-}
-
-.reference strong {
-    color: #29434a;
-    font-size: 13px
-}
-
-.content {
-    padding: 43px 56px 0
-}
-
-.section {
-    padding-bottom: 28px;
-    margin-bottom: 31px;
-    border-bottom: 1px solid var(--line)
-}
-
-.about p {
-    max-width: 770px;
-    color: #40505c;
-    font-size: 15px
-}
-
-.job {
-    display: grid;
-    grid-template-columns: 181px 1fr;
-    gap: 24px;
-    padding: 0 0 26px 19px;
-    position: relative
-}
-
-.job:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 6px;
-    bottom: 0;
-    border-left: 1px solid #bfddda
-}
-
-.job:last-child:before {
-    bottom: 24px
-}
-
-.job-meta {
-    display: grid;
-    align-content: start;
-    gap: 3px;
-    color: var(--muted);
-    font-size: 12px
-}
-
-.job-meta strong {
-    color: #29434a;
-    font-size: 14px
-}
-
-.job h3,
-.education h3 {
-    margin-bottom: 6px;
-    font-size: 14px;
-    letter-spacing: .04em
-}
-
-.job p {
-    margin-bottom: 5px;
-    color: #51616b;
-    font-size: 14px
-}
-
-.job small {
-    color: #66747d;
-    font-size: 12px
-}
-
-.split-section {
-    display: grid;
-    grid-template-columns: 1fr 1.15fr;
-    gap: 48px
-}
-
-.education {
-    display: grid;
-    grid-template-columns: 88px 1fr;
-    gap: 13px;
-    padding-bottom: 15px
-}
-
-.education>span {
-    color: #078489;
-    font-size: 12px;
-    font-weight: 700
-}
-
-.education h3 {
-    margin-bottom: 2px
-}
-
-.education p {
-    margin: 0;
-    color: #53616b;
-    font-size: 13px
-}
-
-.courses {
-    margin: 0;
-    padding-left: 17px;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 1.45;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600
-}
-
-.courses li+li {
-    margin-top: 11px
-}
-
-.courses small {
-    text-transform: none;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    color: #63737a
-}
-
-footer {
-    margin: 0 -56px;
-    padding: 19px 56px;
-    color: #e7f4f2;
-    background: #173944;
-    font-size: 12px;
-    text-align: center
-}
-
-footer i {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 10px 2px;
-    border-radius: 50%;
-    background: #52b8b3
-}
-
-@media(max-width:760px) {
-    .cv {
-        margin: 0
-    }
-
-    .hero {
-        padding: 36px 26px;
-        grid-template-columns: 72px 1fr;
-        gap: 18px
-    }
-
-    .monogram {
-        min-height: 72px
-    }
-
-    .hero address {
-        grid-column: 1/-1;
-        text-align: left
-    }
-
-    .layout {
-        grid-template-columns: 1fr
-    }
-
-    .sidebar {
-        padding: 31px 26px
-    }
-
-    .content {
-        padding: 35px 26px 0
-    }
-
-    .job {
-        grid-template-columns: 1fr;
-        gap: 8px
-    }
-
-    .split-section {
-        grid-template-columns: 1fr;
-        gap: 24px
-    }
-
-    footer {
-        margin: 0 -26px;
-        padding: 18px 25px
-    }
-}
-
-@media print {
-    body {
-        background: #fff
-    }
-
-    .cv {
-        max-width: none;
-        margin: 0;
-        box-shadow: none
-    }
+  display: grid;
+  gap: .45rem;
+  font-style: normal;
 }
 
 .contact-item {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 7px;
+  gap: .5rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: .9rem;
 }
 
-.contact-item svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 15px;
+.contact-item svg,
+.info-line svg {
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  stroke-width: 1.6;
+  flex: 0 0 auto;
 }
 
-.contact-item:last-child svg {
-  fill: currentColor;
-  stroke: none;
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.sidebar {
+  padding: 1.75rem;
+  background: var(--wash);
+  border-right: 1px solid var(--line);
+}
+
+.sidebar section + section {
+  margin-top: 2rem;
+}
+
+.sidebar h2,
+.section h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.data {
+  display: grid;
+  gap: .9rem;
+  margin: 0;
+}
+
+.data div {
+  display: grid;
+  gap: .1rem;
+}
+
+.data dt {
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.data dd {
+  margin: 0;
+  font-size: .9rem;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pills li {
+  padding: .35rem .55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: white;
+  font-size: .75rem;
+}
+
+.reference {
+  display: grid;
+  gap: .25rem;
+  margin-bottom: 1.2rem;
+  font-size: .82rem;
+}
+
+.reference a {
+  color: inherit;
+}
+
+.content {
+  min-width: 0;
+  padding: 2rem;
+}
+
+.section + .section {
+  margin-top: 2.5rem;
+}
+
+.about p {
+  margin-bottom: 0;
+}
+
+.job,
+.education {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.5rem;
+  padding: 1.4rem;
+}
+
+.job-meta {
+  display: grid;
+  align-content: start;
+  gap: .55rem;
+}
+
+.job-meta strong {
+  font-family: "Montserrat", sans-serif;
+}
+
+.job-meta span,
+.year {
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.job h3,
+.education h3 {
+  margin: 0 0 .55rem;
+  font-size: 1rem;
+}
+
+.job p {
+  margin: .2rem 0 .35rem;
+}
+
+.job ul {
+  margin-top: .2rem;
+  padding-left: 1.2rem;
+}
+
+.job small {
+  color: var(--muted);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.15rem;
+  margin-bottom: .8rem;
 }
 
 .edu-icon,
-.info-line svg,
 .course-icon {
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 22px;
   fill: none;
-  stroke: #0c9b9b;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.edu-icon {
-  vertical-align: -2px;
-  margin-right: 5px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  vertical-align: middle;
 }
 
 .info-line {
   display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 4px;
-}
-
-.info-line svg {
-  flex: 0 0 14px;
+  align-items: flex-start;
+  gap: .4rem;
+  margin-top: .4rem;
+  color: var(--muted);
+  font-size: .82rem;
 }
 
 .courses {
-  padding-left: 0;
+  display: grid;
+  gap: .8rem;
+  padding: 0;
   list-style: none;
 }
 
 .courses li {
   display: flex;
-  align-items: flex-start;
-  gap: 9px;
+  gap: .8rem;
 }
 
-.course-icon {
-  flex: 0 0 16px;
-  margin-top: 2px;
+footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+  font-size: .82rem;
 }
 
-.courses li div {
+footer i {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 .5rem;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: middle;
+}
+
+@media (max-width: 760px) {
+  .cv {
+    width: min(100% - 16px, 1120px);
+    margin: 8px auto;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .monogram {
+    margin: 0 auto;
+  }
+
+  address {
+    justify-items: center;
+  }
+
+  .layout,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .content {
+    padding: 1.2rem;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .cv {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .sidebar {
+    background: white;
+  }
+}
+
+/* =========================================================
+   REUSABLE 3D CV CAROUSEL
+   Used by:
+   - Experiencias laborales
+   - Estudios realizados
+   - Talleres y cursos
+   ========================================================= */
+
+.cv-carousel {
+  --carousel-height: 590px;
+  --card-width: min(620px, 62vw);
+  position: relative;
+  width: 100%;
+  min-height: var(--carousel-height);
+  margin: 1.5rem 0 0;
+  perspective: 1400px;
+  outline: none;
+}
+
+.cv-carousel--compact {
+  --carousel-height: 390px;
+  --card-width: min(430px, 32vw);
+}
+
+.carousel-viewport {
+  position: relative;
+  width: 100%;
+  min-height: var(--carousel-height);
   display: grid;
-  gap: 3px;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.courses li strong {
-  color: #29434a;
+.carousel-track {
+  position: relative;
+  width: 100%;
+  min-height: var(--carousel-height);
+  transform-style: preserve-3d;
 }
 
-.courses li small {
-  color: #63737a;
+.carousel-card {
+  position: absolute !important;
+  inset: 0;
+  width: var(--card-width);
+  min-height: 300px;
+  height: fit-content;
+  max-height: calc(var(--carousel-height) - 70px);
+  margin: auto !important;
+  overflow: auto;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  transition:
+    transform 520ms cubic-bezier(.22, .61, .36, 1),
+    opacity 380ms ease,
+    box-shadow 380ms ease,
+    filter 380ms ease;
+  will-change: transform, opacity;
+  cursor: pointer;
+  scrollbar-width: thin;
+  backface-visibility: hidden;
+}
+
+.carousel-card.is-active {
+  cursor: default;
+  filter: none;
+  box-shadow:
+    0 24px 55px rgba(15, 23, 42, .18),
+    0 4px 14px rgba(15, 23, 42, .10);
+}
+
+.carousel-card:not(.is-active) {
+  filter: saturate(.72) brightness(.94);
+}
+
+.carousel-card.is-visible:not(.is-active):hover {
+  filter: saturate(.9) brightness(1);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line, #dbe2ea);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .94);
+  color: var(--ink, #0f172a);
+  font-size: 1.35rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, .12);
+  transform: translateY(-50%);
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, .18);
+}
+
+.carousel-btn:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent, #2563eb) 35%, transparent);
+  outline-offset: 3px;
+}
+
+.carousel-btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.carousel-btn--prev {
+  left: 1rem;
+}
+
+.carousel-btn--next {
+  right: 1rem;
+}
+
+.carousel-controls {
+  position: absolute;
+  z-index: 210;
+  left: 50%;
+  bottom: .35rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .88);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 18px rgba(15, 23, 42, .08);
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--line, #cbd5e1);
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.25);
+}
+
+.carousel-dot.is-active {
+  width: 22px;
+  border-radius: 999px;
+  background: var(--accent, #2563eb);
+}
+
+.carousel-counter {
+  min-width: 42px;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--muted, #64748b);
+  text-align: center;
+}
+
+/* Education card */
+.cv-carousel .education {
+  display: block;
+  padding: 1.5rem;
+}
+
+.cv-carousel .education .year {
+  display: inline-block;
+  margin-bottom: 1.1rem;
+}
+
+.cv-carousel .education h3 {
+  margin-top: 0;
+}
+
+/* Course card */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .85rem;
+  padding: 2rem;
+  border: 1px solid var(--line, #dbe2ea);
+  border-radius: 18px;
+  background: var(--wash, #f8fafc);
+}
+
+.course-card .course-year {
+  width: fit-content;
+  padding: .3rem .65rem;
+  border-radius: 999px;
+  background: var(--accent, #2563eb);
+  color: white;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.course-card strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.course-card small {
+  color: var(--muted, #64748b);
+  line-height: 1.6;
+}
+
+/* Keep the carousel visually usable with the existing split layout. */
+.split-section > div {
+  min-width: 0;
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .carousel-card:not(.is-active) {
+    filter: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .cv-carousel,
+  .cv-carousel--compact {
+    --carousel-height: 520px;
+    --card-width: min(88vw, 500px);
+  }
+
+  .cv-carousel--compact {
+    --carousel-height: 400px;
+  }
+
+  .carousel-viewport,
+  .carousel-track {
+    min-height: var(--carousel-height);
+  }
+
+  .carousel-card {
+    max-height: calc(var(--carousel-height) - 65px);
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+
+  .carousel-btn--prev {
+    left: .25rem;
+  }
+
+  .carousel-btn--next {
+    right: .25rem;
+  }
+
+  .carousel-card:not(.is-active) {
+    opacity: .18 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-carousel {
+    --carousel-height: 570px;
+  }
+
+  .cv-carousel--compact {
+    --carousel-height: 430px;
+  }
+
+  .carousel-card {
+    padding: 1.15rem !important;
+    width: min(82vw, 400px);
+  }
+
+  .carousel-controls {
+    bottom: .15rem;
+  }
+
+  .carousel-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .carousel-dot.is-active {
+    width: 18px;
+  }
+}
+
+/* =========================================================
+   PRINT
+   A CV must remain readable when exported/printed.
+   The carousel therefore becomes a normal vertical list.
+   ========================================================= */
+
+@media print {
+  .cv-carousel,
+  .cv-carousel--compact {
+    min-height: auto;
+    perspective: none;
+  }
+
+  .carousel-viewport,
+  .carousel-track {
+    min-height: auto;
+    overflow: visible;
+    display: block;
+    transform: none;
+  }
+
+  .carousel-card,
+  .carousel-card.is-visible,
+  .carousel-card.is-active {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    margin: 0 0 12px !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    cursor: default;
+    pointer-events: auto !important;
+  }
+
+  .carousel-btn,
+  .carousel-controls {
+    display: none !important;
+  }
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-card,
+  .carousel-btn,
+  .carousel-dot {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================
+   COLORES DEL CARRUSEL
+   ========================================= */
+
+.cv-carousel {
+    --carousel-bg: #eff6f5;
+    --carousel-card-bg: #ffffff;
+    --carousel-text: #18232e;
+    --carousel-muted: #65717c;
+    --carousel-accent: #0c9b9b;
+    --carousel-line: #dbe5e3;
+}
+
+/* Fondo general del carrusel */
+.cv-carousel {
+    background: var(--carousel-bg);
+}
+
+/* Tarjetas */
+.cv-carousel .carousel-card {
+    background: var(--carousel-card-bg);
+    color: var(--carousel-text);
+    border: 1px solid var(--carousel-line);
+}
+
+/* Títulos */
+.cv-carousel .carousel-card h3 {
+    color: var(--carousel-text);
+}
+
+/* Texto secundario */
+.cv-carousel .carousel-card p,
+.cv-carousel .carousel-card small {
+    color: var(--carousel-muted);
+}
+
+/* Fechas / información destacada */
+.cv-carousel .job-meta,
+.cv-carousel .education > span {
+    color: var(--carousel-accent);
+}
+
+/* Iconos */
+.cv-carousel svg {
+    stroke: var(--carousel-accent);
+}
+
+/* Tarjeta activa */
+.cv-carousel .carousel-card.is-active {
+    border-color: var(--carousel-accent);
+    box-shadow: 0 15px 35px rgba(12, 155, 155, 0.18);
+}
+
+/* Flechas */
+.cv-carousel [data-carousel-prev],
+.cv-carousel [data-carousel-next] {
+    color: #ffffff;
+    background: var(--carousel-accent);
+    border: 1px solid var(--carousel-accent);
+}
+
+/* Flechas al pasar el mouse */
+.cv-carousel [data-carousel-prev]:hover,
+.cv-carousel [data-carousel-next]:hover {
+    background: #087c80;
+    border-color: #087c80;
+}
+
+/* Puntos */
+.cv-carousel .carousel-dot {
+    background: var(--carousel-line);
+}
+
+/* Punto activo */
+.cv-carousel .carousel-dot.is-active {
+    background: var(--carousel-accent);
+}
+
+/* Contador */
+.cv-carousel [data-carousel-counter] {
+    color: var(--carousel-muted);
 }
