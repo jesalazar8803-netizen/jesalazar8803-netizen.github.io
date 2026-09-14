@@ -1,329 +1,320 @@
-<div align="center">
-  
-## JOHN EDWARD
+# 👨‍💻 CV Web — Portafolio Personal
 
-## SALAZAR RODRÍGUEZ
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat\&logo=javascript\&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat\&logo=git\&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat\&logo=githubpages\&logoColor=white)
 
-### DESARROLLADOR DE SOFTWARE JUNIOR
+## 📋 Descripción
 
-📍 Bogotá D.C., Colombia
+Sitio web personal desarrollado como una versión digital e interactiva de mi hoja de vida.
 
-<br>
+El proyecto permite presentar de manera organizada mi información profesional, experiencia laboral, formación académica, talleres y cursos, además de información de contacto y habilidades técnicas.
 
-<a href="https://jesalazar8803-netizen.github.io">
-  <img src="https://img.shields.io/badge/🌐_PORTAFOLIO-111827?style=for-the-badge" alt="Portafolio">
-</a>
-
-  
-
-<a href="https://github.com/jesalazar8803-netizen">
-  <img src="https://img.shields.io/badge/💻_GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-
-</div>
+El objetivo es disponer de una **hoja de vida web accesible desde Internet**, que pueda ser utilizada como presentación profesional y como parte de mi portafolio de desarrollo de software.
 
 ---
 
-<div align="center">
+## 🎯 Objetivos
 
-# 01 · HABILIDADES
-
-</div>
-
-## 💻 Desarrollo
-
-| Tecnología    |  Nivel  |
-| :------------ | :-----: |
-| ☕ Java        | **60%** |
-| 🐍 Python     | **45%** |
-| 🟨 JavaScript | **50%** |
-| 🌐 HTML5      | **60%** |
-| 🎨 CSS3       | **35%** |
-| 🗄️ SQL       | **50%** |
-
-<br>
-
-## 🔧 Herramientas
-
-| Tecnología        |  Nivel  |
-| :---------------- | :-----: |
-| Microsoft Access  | **55%** |
-| Microsoft Excel   | **45%** |
-| Microsoft Word    | **45%** |
-| Power BI          | **40%** |
-| Metodología Scrum | **40%** |
+* Crear una versión digital de mi hoja de vida.
+* Presentar mi experiencia laboral de forma organizada.
+* Mostrar mi formación académica y cursos realizados.
+* Presentar mis conocimientos y habilidades técnicas.
+* Aplicar buenas prácticas de HTML y CSS.
+* Incorporar JavaScript para mejorar la interacción de la página.
+* Crear una interfaz responsive para dispositivos de escritorio y móviles.
+* Utilizar Git y GitHub para el control de versiones y publicación del proyecto.
+* Mantener el proyecto como parte de mi portafolio profesional.
 
 ---
 
-<div align="center">
+## ✨ Funcionalidades
 
-# 02 · IDIOMAS
+### 👤 Información personal
 
-</div>
+* Presentación profesional.
+* Información de contacto.
+* Perfil personal.
+* Habilidades y conocimientos.
 
-| Idioma       |    Nivel   |
-| :----------- | :--------: |
-| 🇨🇴 Español | **Nativo** |
-| 🇬🇧 Inglés  |   **B1**   |
+### 💼 Experiencia laboral
 
----
+La experiencia profesional se presenta mediante un **carrusel interactivo**, permitiendo navegar entre las diferentes experiencias mediante:
 
-<div align="center">
+* Flecha anterior.
+* Flecha siguiente.
+* Indicadores de posición.
+* Navegación mediante teclado.
+* Navegación táctil en dispositivos compatibles.
 
-# 03 · PERFIL PROFESIONAL
+### 🎓 Estudios realizados
 
-</div>
+La formación académica se presenta de manera organizada mediante un carrusel similar al utilizado para la experiencia laboral.
 
-> **Técnico en Programación de Software del SENA y estudiante autodidacta**, con conocimientos básicos en Java, Python, JavaScript, HTML5, CSS3 y SQL.
+Incluye:
 
-Cuento con manejo de herramientas como:
+* Formación técnica.
+* Educación secundaria.
+* Educación primaria.
 
-`Microsoft Access` · `Microsoft Excel` · `Microsoft Word` · `Power BI`
+### 📚 Talleres y cursos
 
-También cuento con experiencia académica en la aplicación de **metodologías ágiles**, especialmente **Scrum**.
+Sección destinada a presentar cursos, talleres, diplomados y capacitaciones realizadas.
 
-### 🎯 Objetivo profesional
+Cada elemento puede mostrar:
 
-Busco mi primera oportunidad como **Desarrollador de Software Junior**, donde pueda aplicar y fortalecer mis habilidades técnicas, aportar al desarrollo de soluciones de calidad y continuar creciendo profesionalmente en el área tecnológica.
+* Nombre de la formación.
+* Institución.
+* Duración.
+* Año o fecha de realización.
+* Información complementaria.
 
----
+### 📱 Diseño responsive
 
-<div align="center">
+La interfaz está adaptada para diferentes tamaños de pantalla:
 
-# 04 · PROYECTOS
+* 💻 Computadores.
+* 💻 Portátiles.
+* 📱 Teléfonos móviles.
+* 📱 Tablets.
 
-</div>
+### 🖨️ Versión para impresión
 
-## 📚 Biblioteca Inteligente
-
-### `EN DESARROLLO`
-
-Aplicación web orientada a la gestión de una biblioteca digital.
-
-### Funcionalidades
-
-* 📖 Explorar libros
-* 🔎 Consultar información
-* 🛒 Agregar productos a un carrito de compra
-* 📚 Gestionar una biblioteca digital personal
-
-### Stack tecnológico
-
-`Java` · `SQL` · `HTML5` · `CSS3` · `Git` · `GitHub`
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/jesalazar8803-netizen">
-  <img src="https://img.shields.io/badge/VER_PROYECTOS_EN_GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ver proyectos">
-</a>
-
-</div>
+El proyecto incluye estilos específicos para impresión, permitiendo adaptar la información de la página para generar una versión física o digital de la hoja de vida.
 
 ---
 
-## 🌐 Portafolio Profesional
+## 🛠️ Tecnologías utilizadas
 
-### `ACTIVO`
+### HTML5
 
-Sitio web personal desarrollado para presentar:
+Utilizado para construir la estructura semántica del documento.
 
-* Perfil profesional
-* Habilidades
-* Experiencia laboral
-* Formación académica
-* Proyectos de desarrollo de software
+Principales elementos utilizados:
 
-### Stack tecnológico
+* Secciones.
+* Encabezados.
+* Listas.
+* Información de contacto.
+* Contenido profesional.
+* Estructura del CV.
 
-`HTML5` · `CSS3` · `GitHub Pages`
+### CSS3
 
-<br>
+Utilizado para el diseño visual y la adaptación responsive.
 
-<div align="center">
+Se utilizan:
 
-<a href="https://jesalazar8803-netizen.github.io">
-  <img src="https://img.shields.io/badge/VISITAR_PORTAFOLIO-111827?style=for-the-badge" alt="Visitar portafolio">
-</a>
+* Variables CSS.
+* Flexbox.
+* CSS Grid.
+* Media Queries.
+* Transiciones.
+* Transformaciones 3D.
+* Animaciones y efectos visuales.
+* Estilos específicos para impresión.
 
-</div>
+### JavaScript
 
----
+Utilizado para agregar comportamiento dinámico e interacción.
 
-<div align="center">
+Entre las funcionalidades implementadas se encuentran:
 
-# 05 · EXPERIENCIA LABORAL
+* Control del carrusel.
+* Navegación anterior/siguiente.
+* Indicadores de posición.
+* Navegación mediante teclado.
+* Navegación táctil.
+* Actualización dinámica del contenido activo.
 
-</div>
+### Git
 
----
+Utilizado para el control de versiones del proyecto.
 
-## 🌐 Tabasco OC, LLC · Contratista de Claro
+### GitHub
 
-### Técnico integral de servicios
+Utilizado como plataforma para:
 
-**09 ENERO 2026 — 15 AGOSTO 2026**
-
-### Funciones principales
-
-* Instalación y configuración de servicios de Internet
-* Diagnóstico y solución de fallas técnicas
-* Atención al cliente
-* Elaboración de reportes
-
----
-
-## 🛡️ Seguridad Scanner Ltda.
-
-### Guarda de seguridad
-
-**JULIO 2021 — 08 ENERO 2026**
-
-### Funciones principales
-
-* Control de acceso
-* Cumplimiento de protocolos
-* Elaboración de informes
-* Atención al cliente
+* Almacenar el código fuente.
+* Gestionar versiones.
+* Registrar cambios mediante commits.
+* Publicar el sitio mediante GitHub Pages.
 
 ---
 
-<div align="center">
+## 📁 Estructura del proyecto
 
-# 06 · EDUCACIÓN
+```text
+CV/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
 
-</div>
+### `index.html`
 
-## 🏫 SENA
+Contiene la estructura y el contenido principal de la hoja de vida.
 
-### Técnico en Programación de Software
+### `styles.css`
 
-**2017 — 2018**
+Contiene los estilos visuales, diseño responsive, carruseles, efectos y estilos de impresión.
 
----
+### `script.js`
 
-<div align="center">
+Contiene la lógica JavaScript utilizada principalmente para controlar los carruseles interactivos.
 
-# 07 · CURSOS & TALLERES
+### `README.md`
 
-</div>
-
-## 💻 Diplomado en habilidades de programación
-
-**Énfasis en desarrollo web**
-
----
-
-## 🇬🇧 Inglés comunicativo B1
-
-Formación en comunicación en idioma inglés.
+Documentación general del proyecto.
 
 ---
 
-## 🖥️ Soporte y mantenimiento de computadores
+## 🎨 Paleta de colores
 
-Formación técnica en mantenimiento y soporte informático.
+El diseño utiliza una paleta basada principalmente en tonos oscuros y turquesas.
 
----
+| Variable   | Color     | Uso                    |
+| ---------- | --------- | ---------------------- |
+| `--ink`    | `#18232e` | Texto principal        |
+| `--muted`  | `#65717c` | Texto secundario       |
+| `--accent` | `#0c9b9b` | Color principal/acento |
+| `--wash`   | `#eff6f5` | Fondos suaves          |
+| `--line`   | `#dbe5e3` | Bordes y separadores   |
 
-<div align="center">
-
-# 08 · CERTIFICACIONES
-
-</div>
-
-Actualmente me encuentro fortaleciendo mi formación profesional mediante cursos y certificaciones relacionadas con:
-
-`Desarrollo de Software` · `Programación` · `Tecnologías de la Información`
-
-### 💻 Diplomado en habilidades de programación
-
-Énfasis en desarrollo web.
-
-### 🇬🇧 Inglés comunicativo B1
-
-Formación en comunicación en idioma inglés.
-
-### 🖥️ Soporte y mantenimiento de computadores
-
-Formación técnica en mantenimiento y soporte informático.
+Esta estructura permite modificar fácilmente la identidad visual del sitio mediante las variables definidas en CSS.
 
 ---
 
-<div align="center">
+## 🔄 Control de versiones
 
-# 09 · PERMISO DE CONDUCIR
+El proyecto utiliza Git para controlar los cambios realizados durante su desarrollo.
 
-</div>
+Flujo básico utilizado:
 
-<div align="center">
+```text
+Modificar archivos
+       ↓
+git status
+       ↓
+git add .
+       ↓
+git commit
+       ↓
+git push
+       ↓
+GitHub
+```
 
-### 🏍️ Licencia de conducción A2
-
-**Motocicleta**
-
-</div>
-
----
-
-<div align="center">
-
-# 10 · FORTALEZAS
-
-</div>
-
-<table align="center">
-  <tr>
-    <td align="center">🧩<br><strong>Resolución de problemas</strong></td>
-    <td align="center">🤝<br><strong>Trabajo en equipo</strong></td>
-  </tr>
-  <tr>
-    <td align="center">🔄<br><strong>Adaptabilidad</strong></td>
-    <td align="center">📚<br><strong>Aprendizaje continuo</strong></td>
-  </tr>
-</table>
+Los cambios se mantienen versionados para facilitar el seguimiento de la evolución del proyecto.
 
 ---
 
-<div align="center">
+## 🚀 Ejecución local
 
-# 11 · CONTACTO
+No es necesario instalar un servidor backend para ejecutar la versión actual.
 
-<br>
+### 1. Clonar el repositorio
 
-¿Te interesa conocer mis proyectos, habilidades o experiencia?
+```bash
+git clone URL_DEL_REPOSITORIO
+```
 
-<br><br>
+### 2. Entrar al proyecto
 
-<a href="mailto:jesalazar8803@gmail.com">
-  <img src="https://img.shields.io/badge/✉️_ENVIAR_CORREO-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Enviar correo">
-</a>
+```bash
+cd nombre-del-repositorio
+```
 
-  
+### 3. Ejecutar
 
-<a href="https://github.com/jesalazar8803-netizen">
-  <img src="https://img.shields.io/badge/💻_VER_GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
+Abrir:
 
-  
+```text
+index.html
+```
 
-<a href="https://jesalazar8803-netizen.github.io">
-  <img src="https://img.shields.io/badge/🌐_VER_PORTAFOLIO-111827?style=for-the-badge" alt="Portafolio">
-</a>
+en un navegador web.
 
-<br><br>
-
-`Resolución de problemas` · `Trabajo en equipo` · `Adaptabilidad` · `Aprendizaje continuo`
-
-<br><br>
+También puede utilizarse una extensión como **Live Server** desde Visual Studio Code para facilitar el desarrollo.
 
 ---
 
-### SOFTWARE DEVELOPER · 2026
+## 🌐 Publicación
 
-**JOHN EDWARD SALAZAR RODRÍGUEZ**
+El proyecto está preparado para ser publicado mediante **GitHub Pages**.
 
-🇨🇴 Bogotá D.C., Colombia
+La publicación permite acceder al CV directamente desde un navegador sin necesidad de instalar el proyecto localmente.
 
-</div>
+---
+
+## 🧪 Pruebas
+
+Durante el desarrollo se pueden comprobar principalmente:
+
+* Visualización correcta del contenido.
+* Funcionamiento de las flechas del carrusel.
+* Funcionamiento de los indicadores.
+* Navegación mediante teclado.
+* Navegación táctil.
+* Adaptación responsive.
+* Visualización en diferentes navegadores.
+* Comportamiento durante la impresión.
+* Correcta carga de `styles.css`.
+* Correcta carga de `script.js`.
+
+---
+
+## 🔮 Mejoras futuras
+
+Algunas mejoras que pueden incorporarse posteriormente:
+
+* [ ] Agregar una sección de proyectos de software.
+* [ ] Agregar enlaces a repositorios de GitHub.
+* [ ] Agregar enlace a LinkedIn.
+* [ ] Incorporar una sección de habilidades técnicas con niveles.
+* [ ] Mejorar las animaciones del carrusel.
+* [ ] Incorporar modo oscuro.
+* [ ] Agregar versión en inglés.
+* [ ] Mejorar la accesibilidad.
+* [ ] Optimizar SEO.
+* [ ] Incorporar favicon y metadatos Open Graph.
+* [ ] Automatizar la generación de una versión PDF.
+* [ ] Incorporar nuevos proyectos al portafolio.
+
+---
+
+## 📌 Estado del proyecto
+
+**Estado:** 🟢 En desarrollo
+
+El proyecto continúa evolucionando como parte de mi proceso de aprendizaje y construcción de un portafolio profesional orientado al desarrollo de software.
+
+---
+
+## 👨‍💻 Autor
+
+**John Edward Salazar**
+
+Desarrollador en formación enfocado en el aprendizaje y desarrollo de aplicaciones utilizando tecnologías como:
+
+* Java
+* Spring Boot
+* SQL
+* JavaScript
+* Python
+* HTML5
+* CSS3
+* Git
+* GitHub
+
+---
+
+## 📄 Licencia
+
+Este proyecto corresponde a mi hoja de vida y portafolio personal.
+
+El código puede ser utilizado como referencia educativa, respetando la información personal y profesional contenida en el proyecto.
